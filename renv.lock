@@ -536,15 +536,14 @@
         "R (>= 3.5)"
       ],
       "LazyData": "true",
+      "Author": "Zelda van der Waal [aut, cre] (ORCID: <https://orcid.org/0000-0003-4197-2642>)",
+      "Maintainer": "Zelda van der Waal <zeldavdwaal@gmail.com>",
       "RemoteType": "github",
       "RemoteHost": "api.github.com",
-      "RemoteRepo": "beaverAppDataEngland",
       "RemoteUsername": "zeldavanderwaal",
+      "RemoteRepo": "beaverAppDataEngland",
       "RemoteRef": "main",
-      "RemoteSha": "cc732ce41bf616d39a2a00c35bc603dcf615bbad",
-      "NeedsCompilation": "no",
-      "Author": "Zelda van der Waal [aut, cre] (ORCID: <https://orcid.org/0000-0003-4197-2642>)",
-      "Maintainer": "Zelda van der Waal <zeldavdwaal@gmail.com>"
+      "RemoteSha": "8d9a08212394924ed54d3a4be2be863fc2bb3293"
     },
     "bslib": {
       "Package": "bslib",
