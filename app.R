@@ -3,15 +3,16 @@
 #  the demo data backend 
 options(beaverApp.data.pkg = "beaverAppDataEngland")   #  data package for this deployment 
 Sys.setenv(BEAVERAPP_DATA_PKG = "beaverAppDataEngland", APP_MODE="England") 
-shiny.maxRequestSize 
- 
+
 options(shiny.maxRequestSize = 7200 * 1024^2)  # just in case, 7200MB uploads
+options(rsconnect.max.bundle.size=3145728000)
+
+
 if (!is.na(Sys.getenv("SHINY_PORT", unset = NA))) {
   future::plan("sequential")
 }
 
 cat("\n>>> launching beaverApp from wrapper (England) >>>\n")
-   
 #library(beaverApp) 
 beaverApp::launch_app(run = FALSE)  
 # return a shiny.appobj for shinyapps.io to run.
