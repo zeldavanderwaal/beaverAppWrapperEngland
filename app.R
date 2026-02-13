@@ -9,7 +9,9 @@ Sys.setenv(BEAVERAPP_DATA_PKG = "beaverAppDataEngland",
            APP_REGION= "England")
            # BEAVERAPP_PASSWORD=  XXX  
 
-app_password <- Sys.getenv("BEAVERAPP_PASSWORD") 
+app_password <<- Sys.getenv("BEAVERAPP_PASSWORD") 
+
+ 
 
 options(shiny.maxRequestSize = 7200 * 1024^2)  # just in case, 7200MB uploads
 options(rsconnect.max.bundle.size=3145728000)
